@@ -23,6 +23,8 @@
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Hello World</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>MySQL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,7 +74,7 @@
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <OutDir>..\Bin\</OutDir>
     <IntDir>..\obj\$(PlatformToolset)\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d_$(PlatformTarget)</TargetName>
+    <TargetName>$(ProjectName)_d</TargetName>
     <TargetExt>.dll</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
@@ -90,7 +92,7 @@
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <OutDir>..\Bin\</OutDir>
     <IntDir>..\obj\$(PlatformToolset)\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_$(PlatformTarget)</TargetName>
+    <TargetName>$(ProjectName)</TargetName>
     <TargetExt>.dll</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
@@ -192,12 +194,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="MyModule.h" />
+    <ClInclude Include="Main.h" />
     <ClInclude Include="StdInc.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyModule.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="StdInc.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

@@ -27,6 +27,8 @@ Thumbs.db
 
 #Ignore directories
 .vs
+bin/*
+obj/*
 Debug/*
 Release/*
 

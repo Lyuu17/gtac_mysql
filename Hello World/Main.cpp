@@ -1,11 +1,11 @@
 
 #include "StdInc.h"
-#include "MyModule.h"
+#include "Main.h"
 
 using namespace Galactic3D;
 
 // The table name, so Module.HelloWorld.anything would be where the functions are
-REGISTER_MODULE("HelloWorld");
+REGISTER_MODULE("MySQL");
 
 // Returns a new class instance of TestClass
 static bool FunctionTest(IScriptState* pState, Sint32 argc, void* pUser)
